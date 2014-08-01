@@ -42,7 +42,7 @@ int main(int argc, const char* argv[])
 		{
 			try {
 				int arg = std::stoi(argv[i] + strlen("-port:"));
-				if (arg > 65535)
+				if (arg < 0 || arg > 65535)
 					throw std::out_of_range("Port number out of range");
 				port = uint16_t(arg);
 			} 
@@ -55,7 +55,7 @@ int main(int argc, const char* argv[])
 		{
 			try {
 				int arg = std::stoi(argv[i] + strlen("-fps:"));
-				if (arg > 1000)
+				if (arg < 0 || arg > 1000)
 					throw std::out_of_range("FPS out of range");
 				fps = uint16_t(arg);
 			}
