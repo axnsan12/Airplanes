@@ -52,9 +52,6 @@ void LoginServer::_processPlayer(std::unique_ptr<TCPSocket>* sock, GameServer* s
 					unique_ptr<Statement> stmt(conn->createStatement());
 					unique_ptr<ResultSet> res(stmt->executeQuery("SELECT LAST_INSERT_ID() as `id`"));
 					res->next();
-					std::string password_utf8;
-					utf8::utf16to8(password.cbegin(), password.cend(), std::back_inserter(password_utf8));
-					log::server("Registered new account " + username + " " + password_utf8);
 					log::server("Succesfully authenticated " + socket->remoteAddress() + " as " + username);
 					socket->sendMessage(new ResponseMessage(RESPONSE_OK));
 					std::lock_guard<std::mutex> guard(*lock);
