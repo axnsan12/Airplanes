@@ -4,7 +4,7 @@
 #include <iomanip>
 
 namespace airplanes {
-	const std::string log::LOG_PATH = "D:\\airplanes\\logs\\";
+	const std::string log::LOG_PATH = "C:\\Projects\\airplanes\\logs\\";
 	const std::string log::SERVER_LOG = "server.log";
 	const std::string log::GAME_SERVER_LOG = "game.log";
 

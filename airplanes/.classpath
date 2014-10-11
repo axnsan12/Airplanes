@@ -3,7 +3,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry exported="true" kind="lib" path="libs/gdx.jar" sourcepath="libs/gdx-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/axnsan/Documents/Eclipse/Android Workspace/Airplanes/airplanes/libs/gdx-freetype.jar"/>
-	<classpathentry kind="lib" path="C:/Users/axnsan/Documents/Eclipse/Android Workspace/Airplanes/airplanes/libs/gdx-freetype-natives.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/airplanes/airplanes/libs/gdx-freetype.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/airplanes/airplanes/libs/gdx-freetype-natives.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
